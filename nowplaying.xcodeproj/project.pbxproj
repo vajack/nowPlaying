@@ -192,6 +192,11 @@
 				TargetAttributes = {
 					051E6FAC20C561B70055F8E8 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
 					};
 					051E6FBE20C561B90055F8E8 = {
 						CreatedOnToolsVersion = 9.4;

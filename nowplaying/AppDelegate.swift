@@ -12,9 +12,16 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
-
+    @IBOutlet weak var statusBar: NSMenu!
+    
+    let statusItem = NSStatusBar.system.statusItem(withLength: -1)
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
+        self.statusItem.title = "Song - Artist"
+        self.statusItem.highlightMode = true
+        self.statusItem.menu = statusBar
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

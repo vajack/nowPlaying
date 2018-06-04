@@ -10,10 +10,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var songLabel: NSTextField!
+    @IBOutlet weak var artistLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        songLabel.stringValue = "Loading Song..."
+        artistLabel.stringValue = "Loading Artist..."
     }
 
     override var representedObject: Any? {
